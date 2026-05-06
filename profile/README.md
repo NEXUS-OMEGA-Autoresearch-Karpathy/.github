@@ -41,18 +41,20 @@ OUTPUT
 
 | Repo | Domain | Status | Description |
 |------|--------|--------|-------------|
-| [nexus-omega-core](../nexus-omega-core) | Core | 🟡 pending rename | score_aggregator, Docker, shared infra |
-| [omega-crypto](../omega-crypto) | Crypto | 🟡 pending rename | Freqtrade + Neural Trader AutoResearch |
-| [omega-sports](../omega-sports) | Sports | 🟡 pending rename | Dixon-Coles ensemble, walk-forward bt |
-| [omega-prompts](../omega-prompts) | Prompts | ✅ ready | Langfuse scoring, prompt optimization |
-| [omega-memory-crypto](../omega-memory-crypto) | Memory | ✅ ready | RuVector: crypto patterns |
-| [omega-memory-sports](../omega-memory-sports) | Memory | ✅ ready | RuVector: match patterns |
-| [omega-memory-prompts](../omega-memory-prompts) | Memory | ✅ ready | RuVector: prompt versions |
-| [omega-memory-core](../omega-memory-core) | Memory | ✅ ready | Cross-domain ReasoningBank |
-| [omega-trading-agents](../omega-trading-agents) | Intel | ✅ ready | TradingAgents fork, Bull/Bear/Risk council |
-| [omega-monitoring](../omega-monitoring) | Output | ✅ ready | Telegram, dashboard, n8n |
-| [omega-lab](../omega-lab) | Lab | ✅ ready | Experiments, spikes, Co-Work plugins |
-| [naumii-strategy](../naumii-strategy) | Signal | ✅ active | Fabian Naumann — human prior feed |
+| [nexus-omega-core](../nexus-omega-core) | Core | ✅ | score_aggregator, Docker, shared infra |
+| [omega-crypto](../omega-crypto) | Crypto | ✅ | Freqtrade + Neural Trader AutoResearch |
+| [omega-sports](../omega-sports) | Sports | ✅ | Dixon-Coles ensemble, walk-forward bt |
+| [omega-prompts](../omega-prompts) | Prompts | ✅ | Langfuse scoring, prompt optimization |
+| [omega-memory-crypto](../omega-memory-crypto) | Memory | ✅ | RuVector: crypto patterns |
+| [omega-memory-sports](../omega-memory-sports) | Memory | ✅ | RuVector: match patterns |
+| [omega-memory-prompts](../omega-memory-prompts) | Memory | ✅ | RuVector: prompt versions |
+| [omega-memory-core](../omega-memory-core) | Memory | ✅ | Cross-domain ReasoningBank |
+| [omega-trading-agents](../omega-trading-agents) | Intel | ✅ | TradingAgents fork, Bull/Bear/Risk council |
+| [omega-monitoring](../omega-monitoring) | Output | ✅ | Telegram, dashboard, n8n |
+| [omega-lab](../omega-lab) | Lab | ✅ | Experiments, spikes, Co-Work plugins |
+| [naumii-strategy](../naumii-strategy) | Signal | ✅ | Fabian Naumann — human prior feed |
+
+> Note: 4 empty archived repos (`zz-archived-*`) are pending manual deletion. They hold no code.
 
 ---
 
@@ -69,27 +71,6 @@ naumii-strategy/crypto/ ──→ omega-memory-crypto ──→ omega-crypto  �
 Agreement  → confidence BOOST
 Divergence → interesting signal to investigate
 ```
-
----
-
-## Pending Cleanup  ⚠️
-
-The following needs to be done manually in GitHub (Settings → Danger Zone):
-
-### Delete (all archived, zero code loss)
-- [ ] `omega-crypto` ← empty duplicate, archived
-- [ ] `omega-sports` ← empty duplicate, archived
-- [ ] `nexus-omega-core` ← empty duplicate, archived
-- [ ] `demo-repository` ← empty, archived
-
-### Transfer to Pahuut420 (Settings → Transfer)
-- [ ] `toolduel`
-- [ ] `repo-radar`
-
-### Rename after deletions above (will be done via API)
-- [ ] `crypto-trading` → `omega-crypto`
-- [ ] `sportwetten-autoresearch` → `omega-sports`
-- [ ] `nexus-omega` → `nexus-omega-core`
 
 ---
 
